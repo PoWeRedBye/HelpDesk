@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Register</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="signin.css" rel="stylesheet">
+
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- SCROLLING SCRIPTS PLUGIN  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!-- CUSTOM SCRIPTS   -->
+    <script src="assets/js/custom.js"></script>
+
+
+    <script src="js/Login.js"></script>
+
+    <style>
+        body {
+            background-image: url("image/43-help-desk-software-erp.jpg");
+            background-size: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+<div class="container">
+
+    <form class="form-signin" role="form">
+        <h2 class="form-signin-heading">Please Register</h2>
+        <input id="login" class="form-control" placeholder="login" required>
+        <input id="password" class="form-control" placeholder="password" required>
+        <input id="firstName" class="form-control" placeholder="firstName" required>
+        <input id="lastName" class="form-control" placeholder="lastName" required>
+
+        <h3>Customer Types:</h3><BR>
+        <!--<input list="customertype" name="customertype">
+        <datalist id="customertype">
+            <option value="Client">
+            <option value="ItManagerClient">
+            <option value="ClientViever">
+            <option value="ServiceManager">
+            <option value="ServiceEngineer">
+            <option value="Administrator">
+        </datalist><BR>-->
+        <input type="radio" NAME="customertype" checked="checked"
+               VALUE="client">Client<BR>
+        <input type="radio" NAME="customertype"
+               VALUE="It Manager Client">It Manager Client<BR>
+        <input type="radio" NAME="customertype"
+               VALUE="Client Viever">Client Viever<BR>
+        <input type="radio" NAME="customertype"
+               VALUE="Service Manager">Service Manager<BR>
+        <input type="radio" NAME="customertype"
+               VALUE="Service Engineer">Service Engineer<BR>
+        <input type="radio" NAME="customertype"
+               VALUE="Administrator">Administrator<BR>
+
+        <input type="button" value="Register"
+               onclick="main.regist()">
+        <a href="single.html">
+            <input type="button" value="Go Home">
+        </a>
+
+
+
+
+
+    </form>
+
+
+</div>
+
+</body>
+</html>

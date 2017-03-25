@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<script src="/assets/js/jquery-1.11.1.js"></script>
+<!-- BOOTSTRAP SCRIPTS  -->
+<script src="/assets/js/bootstrap.js"></script>
+<!-- SCROLLING SCRIPTS PLUGIN  -->
+<script src="/assets/js/jquery.easing.min.js"></script>
+<!-- CUSTOM SCRIPTS   -->
+<script src="/assets/js/custom.js"></script>
+<script src="/js/AddTicket.js"></script>
+<style>
+
+    body{
+        background-image: url("/image/43-help-desk-software-erp.jpg");
+        background-size: 100%;
+    }
+</style>
+
+
+
+		<h1 class='contact-title'>Создание заявки:</h1>
+
+<!--переделать эту хуйню в нормальный вид - сделать разными окнами разные формы и не еби Максимка
+себе мозги с этими ебучими модальными окнами!!!!!!!!!!!!!!!!!!-->
+
+ <form class="form-signin" action="/single.html" method="post">
+ <table>
+                                <tbody><tr>
+                                        <th class="lable">*Имя:</th>
+                                        <td class="input"><input id="ticket_type" size="40" maxlength="40" class="input" type="text" required></td>
+                                </tr>
+                              <!--<tr>
+                                        <th class="lable">*Организация</th>
+                                        <td class="input"><input name="category" size="40" maxlength="40" class="input" type="text"></td>
+                                </tr>-->
+                               <tr>
+                                        <th class="lable">Тема:</th>
+                                        <td class="input"><input id="category" size="40" maxlength="40" class="input" type="text" required></td>
+                                </tr>
+                               <tr>
+                                        <th class="lable">*Сообщение:</th>
+                                        <td class="input"><textarea id="description" cols="40" rows="10" class="input" required></textarea></td>
+                                </tr> 
+                                <br><br>       
+                                <tr><th></th>
+                                <td align="center">
+                                  <input name="mail_submit" type="submit" value="Submit" onclick="main.add_ticket()">     </td>
+                                  
+                                </tr>
+                        </tbody></table>
+
+ 
+ 
+</form>
+
+</html>
